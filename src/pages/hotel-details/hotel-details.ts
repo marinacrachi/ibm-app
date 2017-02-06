@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, Slides } from 'ionic-angular';
 import { Hotel, HotelService } from '../../providers/hotel-service';
 import { HotelComentsPage } from '../hotel-coments/hotel-coments';
+import { ViewChild } from '@angular/core';
+
 /*
   Generated class for the HotelDetails page.
 
@@ -13,6 +15,7 @@ import { HotelComentsPage } from '../hotel-coments/hotel-coments';
   templateUrl: 'hotel-details.html'
 })
 export class HotelDetailsPage {
+   @ViewChild(Slides) slides: Slides;
   hotel:Hotel;
   constructor(public navCtrl: NavController, public navParams: NavParams, public hotelService:HotelService) {}
 

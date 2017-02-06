@@ -7,10 +7,10 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>HotelDetails</ion-title>
+    <ion-title>Hotels</ion-title>
     <ion-buttons end>
       <button (click)="goToHotelComents(hotel.id)">
-    Modal
+    Review
     </button>
     </ion-buttons>
   </ion-navbar>
@@ -20,13 +20,19 @@
 
 <ion-content padding>
   <div *ngIf="hotel">
-    <img class="img-responsive" [src]='hotel.imgUrl[0]'>
+    <ion-slides class="home-content" >
+      <ion-slide *ngFor="let img of hotel.imgUrl; let i = index; trackBy: trackByFn">
 
+        <img class="img-responsive" [src]='img'>
+
+      </ion-slide>
+    </ion-slides>
   </div>
 
-  <p>{{hotel?.name}}</p>
-  <p>{{hotel?.description}}</p>
-  <p>{{hotel?.name}}</p>
-  <p>{{hotel?.name}}</p>
+  <p class="h1">{{hotel?.name}}</p>
+  <button ion-button outline>
+    <p class = "h2">{{hotel?.price | currency:'USD':true:'1.2-2'}} per night</p>
+  </button>
+  <p class="h3">{{hotel?.description}}</p>
 
 </ion-content>

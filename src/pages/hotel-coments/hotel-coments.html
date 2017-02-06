@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>HotelComents</ion-title>
+    <ion-title>Comments</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,9 +15,10 @@
 
 <ion-content padding>
   <ion-item *ngFor="let item of comments; let i = index; trackBy: trackByFn">
-    <p>{{item.commentary}}</p>
-    <p>{{item.date}}</p>
+    <p class="date">{{item.date | date: "short"}}</p>
+    <p class="comment">{{item.commentary}}</p>
   </ion-item>
+  
   <form (ngSubmit)="addComment()">
     <ion-item>
       <ion-label color="primary" floating>Enter a Comentary</ion-label>

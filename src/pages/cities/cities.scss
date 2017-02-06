@@ -1,3 +1,36 @@
-page-cities {
+ion-header {
+    font-family:OpenSans-Semibold;
+    font-size:15.02px;
+    color:#ffffff;
+    line-height:20px;
+    text-align:center;
+}
 
+h1 {
+    font-family:OpenSans;
+    font-size:27.29px;
+    color:#ffffff;
+    line-height:8.53px;
+    text-align:left;
+}
+
+h2 {
+    font-family:OpenSans;
+    font-size:12.79px;
+    color:#e6e9ed;
+    line-height:23.88px;
+    text-align:left;
+}
+
+h3 {
+    font-family:OpenSans-Bold;
+    font-size:10.23px;
+    color:#b9b9b9;
+    line-height:21.32px;
+    text-align:left;
+    text-transform: uppercase;
+}
+
+.cities-content {
+    text-align: left;
 }

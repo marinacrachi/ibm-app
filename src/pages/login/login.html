@@ -1,4 +1,6 @@
 <ion-content class="login-content" padding>
+  <ion-content class="login">
+  <h1><b>TRAVEL</b> GUIDE</h1>
 
   <div class="login-box">
     <form (ngSubmit)="login()" #registerForm="ngForm">
@@ -18,13 +20,14 @@
         </ion-col>
       </ion-row>
       
-      <ion-row>
+      <ion-row class="signup">
         <ion-col class="signup-col">
-          <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid">Login</button>
-          <p align="center">Or use the Touch ID</p>
+          <button ion-button icon-left outline class="submit-btn" type="submit" [disabled]="!registerForm.form.valid">Login</button>
+          <h2>Or use the Touch ID</h2>
         </ion-col>
       </ion-row>
       
     </form>
   </div>
+ </ion-content>
 </ion-content>

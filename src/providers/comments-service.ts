@@ -45,6 +45,7 @@ export class CommentsService {
   }
   insertComments(comment: Comment) {
     this.comments.push(comment);
+    
   }
 
 }

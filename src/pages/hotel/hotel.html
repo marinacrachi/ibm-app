@@ -16,9 +16,12 @@
 <ion-content padding>
 
   <ion-item *ngFor="let item of hotels; let i = index; trackBy: trackByFn" [ngStyle]="{'background-image': 'url(' + item.imgUrl[0] + ')'}">
-    <p>{{item.price}}</p>
-    <p>{{item.name}}</p>
-    <button ion-button block outline (click)="goToHotelDetails(item.id)">View Hotels</button>
+    
+    <h1>{{item.name}}</h1>
+    
+    <button ion-button clear (click)="goToHotelDetails(item.id)">
+      {{item.price | currency:'USD':true:'1.2-2'}} per night
+    </button>
     <!-- (click)="goToHotels()" -->
   </ion-item>
 

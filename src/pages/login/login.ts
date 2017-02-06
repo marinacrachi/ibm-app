@@ -3,6 +3,7 @@ import { NavController, AlertController, LoadingController, Loading, NavParams }
 import { AuthService } from '../../providers/auth-service';
 import { HomePage } from '../home/home';
 
+
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html'

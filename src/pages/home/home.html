@@ -1,10 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title><b>TRAVEL</b> GUIDE</ion-title>
+  </ion-navbar>
+
+</ion-header>
 
 <ion-slides class="home-content"  (ionSlideDidChange)="slideChanged()">
 
     <ion-slide *ngFor="let item of destinations; let i = index; trackBy: trackByFn" [ngStyle]="{'background-image': 'url(' + item.imgUrl + ')'}">
-      {{item.name}}
+      <h1>{{item.name}}</h1>
 
-      <button ion-button block outline (click)="goToCities()">View Cities</button>
+      <button class="button" ion-button outline (click)="goToCities()">View Cities</button>
     </ion-slide>
 
 </ion-slides>

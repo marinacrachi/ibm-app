@@ -21,12 +21,12 @@ export class City {
 @Injectable()
 export class CitiService {
 
-  citiesList: City[] = [new City("Brazil", "Fernando de Noronha 1","Description","Beaches", "../../assets/bg_beaches.png"), 
-                        new City("Brazil", "Fernando de Noronha 2","Description","Beaches", "../../assets/bg_beaches.png"),   
-                        new City("France", "Paris 1","Description","Romantic", "../../assets/bg_romantic.png"),
-                        new City("France", "Paris 2","Description","Romantic", "../../assets/bg_romantic.png"),
-                        new City("Mexico", "Cancun","Description","Paradise", "../../assets/bg_paradise.png"),
-                        new City("Mexico", "Cancun 2","Description","Paradise", "../../assets/bg_paradise.png")];
+  citiesList: City[] = [new City("Brazil", "Fernando de Noronha 1","The beaches of Fernando de Noronha are promoted for tourism and recreational diving.","Beaches", "../../assets/bg_fernandodenoronha1.png"), 
+                        new City("Brazil", "Fernando de Noronha 2","The beaches of Fernando de Noronha are promoted for tourism and recreational diving.","Beaches", "../../assets/bg_fernandodenoronha2.png"),   
+                        new City("France", "Paris 1","Tourism in Paris is a major income source for Paris and the city ranks in the world's most visited cities.","Romantic", "../../assets/bg_paris1.png"),
+                        new City("France", "Paris 2","Tourism in Paris is a major income source for Paris and the city ranks in the world's most visited cities.","Romantic", "../../assets/bg_paris2.png"),
+                        new City("Mexico", "Cancun 1","One of America's most preferred vacation destinations - and there are several reasons why.","Paradise", "../../assets/bg_cancun1.png"),
+                        new City("Mexico", "Cancun 2","One of America's most preferred vacation destinations - and there are several reasons why.","Paradise", "../../assets/bg_cancun2.png")];
                        
   
   public getCitiesByType(type) {

@@ -1,19 +1,18 @@
-
 <ion-header>
 
   <ion-navbar>
-    <ion-title>HotelDetails</ion-title>
+    <ion-title>Destinations</ion-title>
   </ion-navbar>
 
 </ion-header>
 <ion-slides class="cities-content" [options]="slideOptions">
 
     <ion-slide *ngFor="let item of cities; let i = index; trackBy: trackByFn" [ngStyle]="{'background-image': 'url(' + item.imgUrl + ')'}">
-      <p>{{item.country}}</p>
-      <p>{{item.name}}</p>
-      <p>{{item.description}}</p>
+      <h3>{{item.country}}</h3>
+      <h1>{{item.name}}</h1>
+      <h2>{{item.description}}</h2>
 
-      <button ion-button block outline (click)="goToHotelsPage(item.name)" >View Hotels</button> <!-- (click)="goToHotels()" -->
+      <button ion-button outline (click)="goToHotelsPage(item.name)" >View Hotels</button> <!-- (click)="goToHotels()" -->
     </ion-slide>
 
 </ion-slides>

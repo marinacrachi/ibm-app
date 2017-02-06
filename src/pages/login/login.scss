@@ -1,4 +1,64 @@
+h1 {
+    font-family:OpenSans-Semibold;
+    font-size:22.18px;
+    color:#ffffff;  
+    letter-spacing:2.77px;
+    line-height:31px;
+    text-align:center;
+}
+
+h2 {
+    font-family:OpenSans-Semibold;
+    font-size:12.8px;
+    color:#ffffff;
+    line-height:18px;
+    text-align:center;
+}
+
+h3 {
+    font-family:SFUIText-Light;
+    font-size:7.99px;
+    color:#ffffff;
+    line-height:10px;
+}
+
+.item {
+    background-color: transparent !important;
+}
+
+.submit-btn {
+    font-family:OpenSans;
+    font-size:12.8px;
+    color:#ffffff;
+    line-height:18px;
+    text-align:center;
+}
+
+.login {
+    top: 70px;
+    margin-left:-4px;
+    margin-right:auto;
+    background-color: transparent;
+}
+
 .login-content {
     background-image: url("../../assets/bg_login.png");
     background-color: #000000;
 }
+
+.submit-btn {
+  border-radius:0.85px;
+  border-color: #ffffff;
+  background: transparent;
+  width:260px;
+  height:41px; 
+}
+
+.signup {
+  top: 350;
+  bottom: 188px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+

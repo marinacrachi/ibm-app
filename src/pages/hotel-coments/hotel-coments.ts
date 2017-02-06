@@ -14,19 +14,25 @@ import { Comment, CommentsService } from '../../providers/comments-service';
 })
 export class HotelComentsPage {
   comments: Comment[];
+
   comment: Comment= new Comment('',new Date(),this.navParams.get('id'));
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public commentsService: CommentsService) {
     this.comments = this.commentsService.getCommentsFromHotel(this.navParams.get('id'))
   }
+
   addComment() {
     this.comment.date = new Date();
-    this.comments.push(this.comment)
+    var copy = Object.assign({}, this.comment)
+    this.comments.push(copy)
+
     this.commentsService.insertComments(this.comment)
+    this.comment.commentary ="";
+    
   }
+  
   ionViewDidLoad() {
     console.log(this.comments);
-
-
   }
 
 }
